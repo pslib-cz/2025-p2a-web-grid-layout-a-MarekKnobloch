@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZine - Grid layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+
+        <header class="layout__header header">
+            <h1 class="header__title">TechZine</h1>
+            <p class="header__subtitle">Novinky ze světa jedniček a nul</p>
+        </header>
+
+        <nav class="layout__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link nav__link--active">Domů</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Články</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Tutoriály</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">O nás</a></li>
+            </ul>
+        </nav>
+
+        <main class="layout__main">
+
+            <article class="article">
+                <h2 class="article__title">Proč se učit CSS Grid?</h2>
+                <p class="article__meta">Publikováno: 21. listopadu 2025 | Autor: Martin Kód</p>
+                <div class="article__content">
+                    <p>
+                        V dnešní době je flexibilita webu klíčová. <b>CSS Grid Layout</b> nám umožňuje
+                        vytvářet komplexní dvourozměrná rozložení, která byla dříve nemožná
+                        nebo vyžadovala složité hacky pomocí floatů.
+                    </p>
+                    <p>
+                        Představte si stránku jako šachovnici. Můžete přesně říct, že tento
+                        obrázek zabere čtyři pole a text vedle něj dvě. To je síla Gridu.
+                    </p>
+                </div>
+            </article>
+
+            <article class="article">
+                <h2 class="article__title">Proč se učit metodiku BEM?</h2>
+                <p class="article__meta">Publikováno: 21. 11. 2025 | Autor: Martin Kód</p>
+                <div class="article__content">
+                    <p>
+                        BEM (Block, Element, Modifier) přináší do CSS řád. Místo kaskádového pekla
+                        vytváříme izolované komponenty. Selektor <code>.nav__link</code> je mnohem
+                        rychlejší a bezpečnější než <code>nav ul li a</code>.
+                    </p>
+                </div>
+            </article>
+
+            <article class="article">
+                <h2 class="article__title">Novinky v HTML5</h2>
+                <div class="article__content">
+                    <p>
+                        Sémantika není jen prázdné slovo. Správné použití značek jako
+                        &lt;article&gt; nebo &lt;aside&gt; pomáhá vyhledávačům lépe
+                        pochopit strukturu vaší stránky.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="layout__aside sidebar">
+
+            <div class="widget">
+                <h3 class="widget__title">Doporučené odkazy</h3>
+                <ul class="widget__list">
+                    <li><a href="https://developer.mozilla.org/" class="widget__link">Dokumentace MDN</a></li>
+                    <li><a href="https://css-tricks.com/" class="widget__link">CSS Tricks Guide</a></li>
+                    <li><a href="https://caniuse.com/" class="widget__link">Can I Use?</a></li>
+                    <li><a href="https://bem.info/" class="widget__link">BEM.info</a></li>
+                </ul>
+            </div>
+
+            <div class="widget widget--highlight">
+                <p class="widget__text">📢 <strong>Workshop:</strong> Páteční kroužek programování!</p>
+            </div>
+        </aside>
+
+        <footer class="layout__footer footer">
+            <p class="footer__copy">&copy; 2025 TechZine - Výukový projekt.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
